@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #0f0c29;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: auto;
+    grid-gap: 5%;
+}
+
+.buttons {
+    margin-top: 15%;
+}
+
+.tittle {
+    color: white;
+    font-family: 'Bowlby One SC', cursive;
+    margin-top: 20px;
+}
+
+.tittle span {
+    color: red;
+}
+
+button {
+    content: "";
+    width: 150px;
+    height: 150px;
+    border: none;
+    border-radius: 5px;
+    top: 50%;
+    margin: 5px;
+    outline-style: none;
+    cursor: pointer;
+    color: transparent;
+    background-color: transparent;
+}
+
+button:active {
+    animation: scale .1s;
+}
+
+@keyframes scale {
+    0% { transform: scale(1) }
+    100% { transform: scale(1.2) }
+}
+
+.snare, .bass, .hihat, .ride, .crash, .tom-one, .tom-two, .floor-tom {
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.snare {
+    background-image:url("../images/snare.png");
+}
+
+.bass {
+    background-image:url("../images/bass.png");
+}
+
+.hihat {
+    background-image:url("../images/hihat.png");
+}
+
+.ride {
+    background-image:url("../images/ride.png");
+}
+
+.crash {
+    background-image:url("../images/crash.png");
+}
+
+.tom-one {
+    background-image:url("../images/tomone.png");
+}
+
+.tom-two {
+    background-image:url("../images/tomtwo.png");
+}
+
+.floor-tom {
+    background-image:url("../images/floortom.png");
+}
+
+@media screen and ( max-width: 500px ) {
+    .buttons {
+        margin-top: 2%;
+    }
+}
